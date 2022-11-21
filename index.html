@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-init="person = {fName: 'Jordan', 'lName: 'Forbes'}; artists = [{name: 'Annihilator', genre: 'Thrash Metal'}; {name: 'Discordance Axis', genre: 'Grindcore'}]">
+    <head>
+        <title>Angular Portfolio</title>
+    </head>
+    <body>
+        <div ng-controller="ctrl">
+            <span>Values:</span>
+
+            <input type="text" ng-model="first" />
+            <input type="text" ng-model="second" />
+
+            <button ng-click="updateValue()">
+                Sum
+            </button>
+            <br><br>
+
+            {{calculation}}
+        </div>
+        <script src ='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js'></script>
+        <script src ='js/index.js'></script>
+    </body>
+</html>
